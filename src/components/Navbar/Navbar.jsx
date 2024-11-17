@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { logo } from "@/images";
 import Image from "next/image";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -14,12 +13,6 @@ const Navbar = () => {
     { navItem: "Image to Image", to: "image-to-image" },
     { navItem: "Pricing", to: "pricing" },
     { navItem: "My Images", to: "my-images" },
-  ];
-
-  const socialInfo = [
-    { icon: <FaFacebook className="text-xl" />, link: "#" },
-    { icon: <FaLinkedin className="text-xl" />, link: "#" },
-    { icon: <FaTwitter className="text-xl" />, link: "#" },
   ];
 
   const [sidebar, setSidebar] = useState(false);

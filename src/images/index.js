@@ -15,6 +15,7 @@ import flusImage from "./fluximage.png";
 import markdownexportIcon from "./markdownExportIcon.svg";
 import imageHostingIcon from "./imagehostingIcon.svg";
 import robotImg from "./robot.png";
+import fishImg from "./fish.png";
 
 export {
   logo,
@@ -33,4 +34,5 @@ export {
   markdownexportIcon,
   imageHostingIcon,
   robotImg,
+  fishImg,
 };

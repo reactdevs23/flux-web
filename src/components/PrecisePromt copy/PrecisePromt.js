@@ -7,7 +7,7 @@ import { Navigation } from "swiper/modules";
 import { lavenderPath, sportsCar } from "@/images";
 import { MdOutlineChevronLeft, MdOutlineChevronRight } from "react-icons/md";
 import Slide from "./Slide";
-import useSpacing from "../Hook/Hook";
+import useSpacing from "../../Hook/Hook";
 
 const PrecisePromt = () => {
   const { dynamicPaddingLeft } = useSpacing(1232);
