@@ -4,7 +4,7 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { amenda, shape } from "@/images";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
@@ -86,17 +86,12 @@ const Testimonials = () => {
         </div>
       </div>
       <Swiper
-        modules={[Navigation, Autoplay]} // Add both modules
+        modules={[Navigation]} // Add both modules
         onSlideChange={handleSlideChange} // Handle slide change
         loop={true}
         slidesPerView={2.2}
         centeredSlides={true}
         spaceBetween={30}
-        autoplay={{
-          delay: 2500,
-          pauseOnMouseEnter: true, // Pause autoplay on hover
-          disableOnInteraction: false, // Ensures autoplay doesn't disable after interaction
-        }}
         breakpoints={{
           1024: {
             slidesPerView: 1.8,
