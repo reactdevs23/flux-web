@@ -22,7 +22,7 @@ const Slide = ({ img, title }) => {
         <p className="text-green  text-sm md:text-base font-bold leading-[100%] md:leading-[90%]">
           Prompt:
         </p>
-        <p className="text-white  text-base md:text-2xl font-medium">{title}</p>
+        <p className="text-white  text-base md:text-xl font-medium">{title}</p>
       </div>
     </div>
   );

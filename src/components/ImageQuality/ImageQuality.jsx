@@ -85,13 +85,13 @@ const ImageQuality = () => {
         {/* Custom Navigation Buttons */}
         <div className=" hidden md:flex justify-end gap-4  mx-auto max-w-[790px] w-full">
           <button
-            className="arrowButton"
+            className="arrowButton opacity-80"
             onClick={() => swiperRef.current?.swiper.slidePrev()}
           >
             <MdOutlineChevronLeft className="text-black text-xl " />
           </button>
           <button
-            className="arrowButton"
+            className="arrowButton opacity-80"
             onClick={() => swiperRef.current?.swiper.slideNext()}
           >
             <MdOutlineChevronRight className="text-black text-xl " />

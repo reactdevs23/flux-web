@@ -4,7 +4,7 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { amenda, shape } from "@/images";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
@@ -86,12 +86,17 @@ const Testimonials = () => {
         </div>
       </div>
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]} // Add both modules
         onSlideChange={handleSlideChange} // Handle slide change
         loop={true}
         slidesPerView={2.2}
         centeredSlides={true}
         spaceBetween={30}
+        autoplay={{
+          delay: 2500,
+          pauseOnMouseEnter: true, // Pause autoplay on hover
+          disableOnInteraction: false, // Ensures autoplay doesn't disable after interaction
+        }}
         breakpoints={{
           1024: {
             slidesPerView: 1.8,
@@ -106,11 +111,10 @@ const Testimonials = () => {
         className="w-full px-4"
         ref={swiperRef}
       >
-        {data?.map((el, i) => (
+        {data.map((el, i) => (
           <SwiperSlide
             key={i}
-            className={`flex  gap-4 opacity-40 cursor-not-allowed	   items-center bg-white rounded-[19px] 
-            `}
+            className="flex gap-4 opacity-40 cursor-not-allowed items-center bg-white rounded-[19px]"
           >
             <Slide {...el} />
           </SwiperSlide>
