@@ -1,13 +1,17 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+
 import Link from "next/link";
 import { logo } from "@/images";
 import Image from "next/image";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
+import { AppContext } from "@/app/Provider";
 
 const Navbar = () => {
+  const { showGenerateButton } = useContext(AppContext);
+
   const navItems = [
     { navItem: "Generate New", to: "generate-new" },
     { navItem: "Image to Image", to: "image-to-image" },
@@ -49,7 +53,7 @@ const Navbar = () => {
           : ""
       }`}
     >
-      <header className="grid grid-cols-[auto,1fr] h-[80px] lg:h-[90px] items-center justify-start gap-24 py-4 container">
+      <header className="grid grid-cols-[auto,1fr] h-[80px] lg:h-[90px] items-center justify-start gap-12 xl:gap-24 py-4 container">
         <Link href="/" onClick={() => setSidebar(false)}>
           <Image
             src={logo.src}
@@ -81,10 +85,18 @@ const Navbar = () => {
           ))}
           <Link
             href="/sign-in"
-            className="font-semibold text-base lg:ml-auto block"
+            className="font-semibold text-base lg:ml-auto block hover:text-green transition duration-300"
           >
             Sign in
           </Link>
+          {showGenerateButton && (
+            <button
+              className="  hover:opacity-70 transition duration-500  px-6 py-2  bg-black border-green border-solid	border-2 rounded-lg	 text-white text-base font-bold"
+              onClick={() => {}}
+            >
+              Generate Now
+            </button>
+          )}
         </div>
 
         <div

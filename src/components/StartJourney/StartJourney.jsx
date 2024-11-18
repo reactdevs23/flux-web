@@ -15,7 +15,7 @@ const StartJourney = () => {
         unlimited bandwidth image hosting ensures you can share your work
         freely.
       </p>
-      <button className="button">Generate Now</button>
+      <button className="button mx-auto">Generate Now</button>
     </section>
   );
 };

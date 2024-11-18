@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
-import { amenda, shape } from "@/images";
+import { amenda, avatar2, avatar3, avatar4, avatar5, shape } from "@/images";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import { MdOutlineChevronLeft, MdOutlineChevronRight } from "react-icons/md";
@@ -28,23 +28,30 @@ const Testimonials = () => {
         "I have been looking everywhere and have settled on Upscayl. It's free, which is a definite bonus, but it also seems better than all the paid ones I tried the trial of!",
     },
     {
-      img: amenda,
-      name: "Amenda",
-      country: "United States",
+      img: avatar2,
+      name: "Shphia",
+      country: "Canada",
       feedback:
         "I have been looking everywhere and have settled on Upscayl. It's free, which is a definite bonus, but it also seems better than all the paid ones I tried the trial of!",
     },
     {
-      img: amenda,
-      name: "Amenda",
-      country: "United States",
+      img: avatar3,
+      name: "Tom",
+      country: "United Kingdom",
       feedback:
         "I have been looking everywhere and have settled on Upscayl. It's free, which is a definite bonus, but it also seems better than all the paid ones I tried the trial of!",
     },
     {
-      img: amenda,
-      name: "Amenda",
-      country: "United States",
+      img: avatar4,
+      name: "Liam",
+      country: "Australia",
+      feedback:
+        "I have been looking everywhere and have settled on Upscayl. It's free, which is a definite bonus, but it also seems better than all the paid ones I tried the trial of!",
+    },
+    {
+      img: avatar5,
+      name: "Elon",
+      country: "Australia",
       feedback:
         "I have been looking everywhere and have settled on Upscayl. It's free, which is a definite bonus, but it also seems better than all the paid ones I tried the trial of!",
     },
@@ -122,13 +129,13 @@ const Testimonials = () => {
           className="arrowButton"
           onClick={() => swiperRef.current?.swiper.slidePrev()}
         >
-          <MdOutlineChevronLeft className="text-black text-xl " />
+          <MdOutlineChevronLeft className="text-black hover:text-green text-xl " />
         </button>
         <button
           className="arrowButton"
           onClick={() => swiperRef.current?.swiper.slideNext()}
         >
-          <MdOutlineChevronRight className="text-black text-xl " />
+          <MdOutlineChevronRight className="text-black hover:text-green text-xl " />
         </button>
       </div>
     </div>
