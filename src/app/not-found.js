@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Custom404() {
   return (
-    <div className="min-h-[calc(100vh-90px)] flex flex-col items-center justify-center text-center">
+    <div className=" py-12 pt-24   min-h-[calc(100vh-90px)] flex flex-col items-center justify-center text-center container">
       <h1 className="heading text-4xl md:text-5xl font-bold text-red-600 py-6">
         Oops! 404 - Page Not Found
       </h1>
