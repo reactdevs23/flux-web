@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext } from "react";
-import { car, ocean, spaceShip, doll, girl } from "@/images";
+import { car, ocean, spaceShip, doll, girl, radialCircle } from "@/images";
 import Image from "next/image";
 import { AppContext } from "@/app/Provider";
 import { useScrollVisibility } from "@/Hook/Hook";
@@ -52,6 +52,13 @@ const HeroSection = () => {
       </div>
       <div className="hero-overlay-1"></div>
       <div className="hero-overlay-2"></div>
+      <Image
+        src={radialCircle.src}
+        width={500}
+        height={500}
+        alt="radial-circle"
+        className="radial-circle"
+      />
     </section>
   );
 };

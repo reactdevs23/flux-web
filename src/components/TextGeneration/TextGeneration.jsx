@@ -11,7 +11,7 @@ const TextGeneration = () => {
   ];
 
   return (
-    <section className="container section-spacing     flex flex-col gap-10 md:gap-16">
+    <section className="container section-spacing     flex flex-col gap-10 md:gap-16 ">
       <div
         className={"max-w-[882px] w-full 	flex flex-col gap-2 sm:gap-4 md:gap-6"}
       >
@@ -24,7 +24,7 @@ const TextGeneration = () => {
           position, making your designs more professional.
         </p>
       </div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3  gap-x-4 gap-y-8 lg:gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3  gap-x-4 gap-y-12 lg:gap-6 ">
         {data?.map((el, i) => (
           <Card {...el} key={i} />
         ))}

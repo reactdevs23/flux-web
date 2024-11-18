@@ -9,7 +9,7 @@ const Footer = () => {
     { href: "#", text: "Terms & Conditions" },
   ];
   return (
-    <footer className="flex flex-col items-start xs:grid  xs:grid-cols-[1fr,auto] lg:grid-cols-[auto,1fr,auto] xs:items-center lg:flex-row lg:items-center gap-4 lg:gap-6 container py-4 ">
+    <footer className="flex flex-col items-start xs:grid  xs:grid-cols-[1fr,auto] lg:grid-cols-[auto,1fr,auto] xs:items-center lg:flex-row lg:items-center gap-4 lg:gap-6 container py-6 border-t border-black border-opacity-10">
       <Image
         src={logo.src}
         alt="Flux"

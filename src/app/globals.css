@@ -27,22 +27,35 @@ body {
 .hero-overlay-1 {
   position: absolute;
   top: 0;
-  height: 60%;
+  height: 90%;
   width: 100%;
-  background: linear-gradient(164deg, #fff 0%, rgba(255, 255, 255, 0) 60%);
+
+  background: linear-gradient(
+    164deg,
+    #fff 19.02%,
+    rgba(255, 255, 255, 0) 80.94%
+  );
   z-index: -1;
 }
 
 .hero-overlay-2 {
   position: absolute;
-  top: 40%;
+  top: auto;
   bottom: 0;
-  height: 60%;
+  height: 90%;
   width: 100%;
-  background: linear-gradient(181deg, rgba(255, 255, 255, 0) 0%, #fafafa 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fafafa 100%);
   z-index: -1;
 }
-
+.radial-circle {
+  position: absolute;
+  top: -2%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  max-width: 1232px;
+  width: 90%;
+}
 /* .container2 {
   width: calc(1231px + 4.22%);
   @apply w-11/12 md:w-full md:pl-[4.22%] mx-auto md:ml-auto;
@@ -54,6 +67,14 @@ body {
 .text {
   @apply text-base md:text-xl text-black;
 }
+.activeColor {
+  @apply text-green;
+}
+@media only screen and (max-width: 767px) {
+  .activeColor {
+    @apply text-black;
+  }
+}
 .arrowButton {
   @apply hover:text-green  w-[34px] h-[34px] flex justify-center items-center rounded-full  transition duration-300;
   background: rgba(217, 217, 217, 0.3);
@@ -63,8 +84,54 @@ body {
 }
 
 .button {
-  @apply max-w-[209px] hover:opacity-80 transition duration-500 transform hover:translate-y-[-3px] py-3 px-4 md:p-4  block w-full bg-black border-[#63FFB6] border-solid	border-2 rounded-lg	 text-white text-base font-bold;
+  @apply max-w-[209px] hover:opacity-80 transition duration-500 transform hover:translate-y-[-3px] py-3 px-4 md:p-4 block w-full bg-black border-solid border-2 rounded-lg text-white text-base font-bold relative overflow-hidden;
+  border: none; /* Disable the original solid border */
 }
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #0000;
+
+  background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(var(--angle), #63ffb6, #16c66e, #000) border-box;
+  animation: 3s rotate linear infinite;
+}
+.button-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #0000;
+
+  background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(var(--angle), #63ffb6, #16c66e, #000) border-box;
+  animation: 3s rotate linear infinite;
+}
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* Gradient animation */
+@keyframes gradient-animation {
+  0% {
+    --animate-duration: 0deg;
+    --Color: #4afd71;
+  }
+  100% {
+    --animate-duration: 360deg;
+    --Color: #4afd71;
+  }
+}
+
 .section-spacing {
   @apply py-10 md:py-16;
 }

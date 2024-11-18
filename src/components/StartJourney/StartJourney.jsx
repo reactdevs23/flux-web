@@ -4,7 +4,7 @@ const StartJourney = () => {
   return (
     <section
       className={
-        "section-spacing max-w-[1061px] md:w-full w-11/12 mx-auto	flex flex-col gap-2 sm:gap-4 md:gap-8"
+        "section-spacing max-w-[1061px] md:w-full w-11/12 mx-auto	flex flex-col gap-6 md:gap-8"
       }
     >
       <h2 className="heading text-center  ">Start Your Creative Journey Now</h2>

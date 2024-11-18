@@ -40,10 +40,10 @@ const UniqueAdvantages = () => {
             {el.icon && (
               <Image
                 src={el.icon.src}
-                width={58}
-                height={36}
+                width={100}
+                height={56}
                 alt={el.title}
-                className="w-[45px]"
+                className="w-[100px]"
               />
             )}{" "}
             {el.iconText && (

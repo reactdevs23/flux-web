@@ -92,7 +92,7 @@ const Navbar = () => {
           </Link>
           {showGenerateButton && (
             <button
-              className="  hover:opacity-70 transition duration-500  px-6 py-2  bg-black border-green border-solid	border-2 rounded-lg	 text-white text-base font-bold"
+              className="button-animation  hover:opacity-70 transition duration-500  px-6 py-2  bg-black border-green border-solid	border-2 rounded-lg	 text-white text-base font-bold"
               onClick={() => {}}
             >
               Generate Now

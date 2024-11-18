@@ -54,11 +54,8 @@ const ImageQuality = () => {
           slidesPerView={2}
           spaceBetween={30}
           breakpoints={{
-            1281: {
-              slidesPerView: 2.95,
-            },
             1025: {
-              slidesPerView: 2.3,
+              slidesPerView: 1.95,
               spaceBetween: 30,
             },
             768: {

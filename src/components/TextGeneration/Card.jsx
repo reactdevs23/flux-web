@@ -4,7 +4,7 @@ import React from "react";
 const Card = ({ img, title }) => {
   return (
     <div
-      className={`flex flex-col gap-2 md:gap-4 lg:gap-6   items-start  
+      className={`flex flex-col gap-4 md:gap-4 lg:gap-6   items-start  
             `}
     >
       {" "}

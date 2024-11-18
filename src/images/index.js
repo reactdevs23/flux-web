@@ -20,9 +20,11 @@ import markdownexportIcon from "./markdownExportIcon.svg";
 import imageHostingIcon from "./imagehostingIcon.svg";
 import robotImg from "./robot.png";
 import fishImg from "./fish.png";
+import radialCircle from "./radial-circle.png";
 
 export {
   logo,
+  radialCircle,
   car,
   doll,
   ocean,
