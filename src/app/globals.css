@@ -24,15 +24,20 @@ body {
 .container {
   @apply max-w-[1231px] w-11/12	 mx-auto;
 }
+.hero-section {
+  background: linear-gradient(81deg, #52e0c4 14.79%, #9ceffe 89.25%);
+
+  background-repeat: no-repeat;
+}
 .hero-overlay-1 {
   position: absolute;
   top: 0;
-  height: 90%;
+  height: 60%;
   width: 100%;
 
   background: linear-gradient(
-    164deg,
-    #fff 19.02%,
+    175deg,
+    #fafafa 19.02%,
     rgba(255, 255, 255, 0) 80.94%
   );
   z-index: -1;
@@ -41,9 +46,10 @@ body {
 .hero-overlay-2 {
   position: absolute;
   top: auto;
-  bottom: 0;
-  height: 90%;
+  bottom: 0%;
+  height: 60%;
   width: 100%;
+
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fafafa 100%);
   z-index: -1;
 }
@@ -95,7 +101,7 @@ body {
   border: 3px solid #0000;
 
   background: linear-gradient(#000, #000) padding-box,
-    linear-gradient(var(--angle), #63ffb6, #16c66e, #000) border-box;
+    linear-gradient(var(--angle), #63ffb6, #0000ff, #000) border-box;
   animation: 3s rotate linear infinite;
 }
 .button-animation {
@@ -105,7 +111,7 @@ body {
   border: 2px solid #0000;
 
   background: linear-gradient(#000, #000) padding-box,
-    linear-gradient(var(--angle), #63ffb6, #16c66e, #000) border-box;
+    linear-gradient(var(--angle), #63ffb6, #16c66e, #0000ff, #0000ff) border-box;
   animation: 3s rotate linear infinite;
 }
 @keyframes rotate {

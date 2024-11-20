@@ -33,10 +33,6 @@ module.exports = {
         screen1440: "1441px",
         xs: "480px",
       },
-      backgroundImage: {
-        "primary-gradient":
-          "linear-gradient(81deg, #52E0C4 14.79%, #9CEFFE 89.25%);",
-      },
     },
   },
   plugins: [],

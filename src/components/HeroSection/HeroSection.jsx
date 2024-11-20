@@ -17,7 +17,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="bg-primary-gradient relative z-10  pt-32 lg:pt-48 pb-12 md:pb-20  flex flex-col gap-16 w-full ">
+    <section className="hero-section  relative z-10  pt-32 lg:pt-48 pb-12 md:pb-20  flex flex-col gap-16 w-full ">
       <div className="mx-auto w-11/12	 max-w-[850px]  flex flex-col gap-6 xl:gap-10 ">
         <h1 className="heading text-center">
           FLUX.1: Revolutionary AI Image Generation
