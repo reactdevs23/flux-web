@@ -105,17 +105,17 @@ body {
   border: 3px solid #0000;
 
   background: linear-gradient(#000, #000) padding-box,
-    linear-gradient(var(--angle), #1cc09c, #9ceffe) border-box;
+    linear-gradient(var(--angle), #52e0c4, #0000ff, #52e0c4) border-box;
   animation: 3s rotate linear infinite;
 }
 .button-animation {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #0000;
+  border: 3px solid #0000;
 
   background: linear-gradient(#000, #000) padding-box,
-    linear-gradient(var(--angle), #52e0c4, #9ceffe) border-box;
+    linear-gradient(var(--angle), #52e0c4, #0000ff, #52e0c4) border-box;
   animation: 3s rotate linear infinite;
 }
 @keyframes rotate {
