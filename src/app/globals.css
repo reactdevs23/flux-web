@@ -25,7 +25,11 @@ body {
   @apply max-w-[1231px] w-11/12	 mx-auto;
 }
 .hero-section {
-  background: linear-gradient(81deg, #52e0c4 14.79%, #9ceffe 89.25%);
+  background: linear-gradient(
+    81deg,
+    #1cc09c 14.79%,
+    /* Deeper shade of #52e0c4 */ #9ceffe 89.25%
+  );
 
   background-repeat: no-repeat;
 }
@@ -101,7 +105,7 @@ body {
   border: 3px solid #0000;
 
   background: linear-gradient(#000, #000) padding-box,
-    linear-gradient(var(--angle), #63ffb6, #0000ff, #000) border-box;
+    linear-gradient(var(--angle), #52e0c4, #9ceffe, #000) border-box;
   animation: 3s rotate linear infinite;
 }
 .button-animation {
@@ -111,7 +115,7 @@ body {
   border: 2px solid #0000;
 
   background: linear-gradient(#000, #000) padding-box,
-    linear-gradient(var(--angle), #63ffb6, #16c66e, #0000ff, #0000ff) border-box;
+    linear-gradient(var(--angle), #52e0c4, #9ceffe, #000) border-box;
   animation: 3s rotate linear infinite;
 }
 @keyframes rotate {
