@@ -35,7 +35,7 @@ const ImageQuality = () => {
       >
         <div
           className={
-            "max-w-[773px] w-full md:w-11/12	flex flex-col gap-2 sm:gap-4 md:gap-4"
+            "max-w-[773px] w-full md:w-11/12	flex flex-col gap-2 sm:gap-4 md:gap-6"
           }
         >
           <h2 className=" text-white text-[40px] md:text-[50px] lg:text-6xl  font-bold leading-tight">
