@@ -25,7 +25,7 @@ module.exports = {
         xl: "21px", // Custom font size for xl
       },
       fontFamily: {
-        sf: ["Nunito", "sans-serif"],
+        sf: ["Noto Sans", "sans-serif"],
         unbounded: ["Unbounded", "sans-serif"],
       },
       screens: {
