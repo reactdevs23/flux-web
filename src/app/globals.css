@@ -105,7 +105,7 @@ body {
   border: 3px solid #0000;
 
   background: linear-gradient(#000, #000) padding-box,
-    linear-gradient(var(--angle), #52e0c4, #9ceffe, #000) border-box;
+    linear-gradient(var(--angle), #1cc09c, #9ceffe, #1cc09c, #9ceffe) border-box;
   animation: 3s rotate linear infinite;
 }
 .button-animation {
@@ -115,7 +115,7 @@ body {
   border: 2px solid #0000;
 
   background: linear-gradient(#000, #000) padding-box,
-    linear-gradient(var(--angle), #52e0c4, #9ceffe, #000) border-box;
+    linear-gradient(var(--angle), #1cc09c, #9ceffe, #1cc09c, #9ceffe) border-box;
   animation: 3s rotate linear infinite;
 }
 @keyframes rotate {
