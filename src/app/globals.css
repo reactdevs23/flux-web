@@ -52,7 +52,7 @@ body {
 .hero-overlay-2 {
   position: absolute;
   top: auto;
-  bottom: -200px;
+  bottom: 200px;
   height: 60%;
   width: 100%;
 
