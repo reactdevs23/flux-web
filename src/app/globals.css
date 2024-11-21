@@ -30,9 +30,11 @@ body {
     #1cc09c 14.79%,
     /* Deeper shade of #52e0c4 */ #9ceffe 89.25%
   );
+  background-size: 100% calc(100% - 200px);
 
   background-repeat: no-repeat;
 }
+
 .hero-overlay-1 {
   position: absolute;
   top: 0;
@@ -50,12 +52,20 @@ body {
 .hero-overlay-2 {
   position: absolute;
   top: auto;
-  bottom: 0%;
+  bottom: -200px;
   height: 60%;
   width: 100%;
 
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fafafa 100%);
   z-index: -1;
+}
+@media only screen and (max-width: 767px) {
+  .hero-section {
+    background-size: 100% calc(100% - 150px);
+  }
+  .hero-overlay-2 {
+    bottom: 150px;
+  }
 }
 .radial-circle {
   position: absolute;
@@ -118,6 +128,7 @@ body {
     linear-gradient(var(--angle), #52e0c4, #0000ff, #52e0c4) border-box;
   animation: 3s rotate linear infinite;
 }
+
 @keyframes rotate {
   to {
     --angle: 360deg;

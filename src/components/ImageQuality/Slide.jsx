@@ -15,7 +15,7 @@ const Slide = ({ img, title }) => {
           width={684}
           height={490}
           alt={title}
-          className="w-full h-full rounded-[24px] md:rounded-[30px] object-cover object-center	origin-center		transition-transform duration-500 cursor-pointer hover:scale-110"
+          className="w-full aspect-[1000/600] h-full rounded-[24px] md:rounded-[30px] object-cover object-center	origin-center		transition-transform duration-500 cursor-pointer hover:scale-110"
         />
       </div>
       <div className="flex flex-col sm:gap-1">

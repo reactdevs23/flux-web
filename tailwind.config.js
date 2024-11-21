@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      aspectRatio: {
+        "684/490": "684 / 490",
+        "1000/600": "1000 / 600",
+      },
       colors: {
         primary: "#FAFAFA",
         secondary: "#343434",
